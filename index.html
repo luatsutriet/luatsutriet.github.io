@@ -64,6 +64,20 @@ details[open]>p{animation:fadeDown .35s ease both}
 <style>
 html{scroll-behavior:smooth}
 section{scroll-margin-top:72px}
+.vcover{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:1rem;aspect-ratio:9/16;padding:1.125rem;border-radius:16px;background:#0E1A2B;border:1px solid #24344D;color:#FFFFFF;overflow:hidden;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.vcover:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(14,26,43,.28);border-color:#C9A14A;color:#FFFFFF}
+.vc-bg{position:absolute;right:-48px;bottom:40px;color:#C9A14A;opacity:.10;pointer-events:none}
+.vc-top{position:relative;display:flex;justify-content:space-between;align-items:center;gap:.5rem;font-size:.75rem}
+.vc-num{font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#E3C98A}
+.vc-tag{color:#AEB9C9}
+.vc-mid{position:relative;display:flex;flex-direction:column;gap:.75rem}
+.vc-icon{width:48px;height:48px;border-radius:12px;background:rgba(201,161,74,.14);color:#E3C98A;display:flex;align-items:center;justify-content:center}
+.vc-title{font-size:1.3rem;line-height:1.2;font-weight:800;letter-spacing:-.01em}
+.vc-br{color:#C9A14A;font-weight:700}
+.vc-sub{font-size:.875rem;line-height:1.5;color:#C9D1DD}
+.vc-btn{position:relative;align-self:stretch;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:46px;border-radius:999px;background:#C9A14A;color:#0E1A2B;font-weight:700;font-size:.9375rem;animation:pulseGold 2.4s ease-out infinite;transition:transform .2s ease}
+.vcover:hover .vc-btn{transform:scale(1.04)}
+@media (max-width:640px){.vcover{aspect-ratio:auto;min-height:340px}.vc-title{font-size:1.75rem}}
 .vframe{position:relative;width:100%;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:#0E1A2B;border:1px solid #0E1A2B}
 .vframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 </style>
@@ -300,18 +314,36 @@ Xem TikTok @luatsutriet
 <div style="flex:999 1 520px;min-width:0">
 <p style="margin:0 0 1rem;font-size:0.9375rem;font-weight:600;color:#2A3547">Video về thủ tục bảo hộ nhãn hiệu</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.25rem">
-<figure style="margin:0;display:flex;flex-direction:column;gap:0.625rem">
-<div class="vframe"><iframe src="https://www.tiktok.com/player/v1/7501572654227492104?music_info=0&amp;description=0&amp;rel=0" title="Video 01: Tại sao phải đăng ký bảo hộ nhãn hiệu?" loading="lazy" allow="fullscreen; encrypted-media; picture-in-picture" allowfullscreen=""></iframe></div>
-<figcaption style="display:flex;flex-direction:column;gap:0.25rem"><span style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#7A5A12">Video 01</span><a href="https://www.tiktok.com/@luatsutriet/video/7501572654227492104" target="_blank" rel="noopener" style="font-size:0.9375rem;font-weight:700;line-height:1.35">Tại sao phải đăng ký bảo hộ nhãn hiệu?</a></figcaption>
-</figure>
-<figure style="margin:0;display:flex;flex-direction:column;gap:0.625rem">
-<div class="vframe"><iframe src="https://www.tiktok.com/player/v1/7501556846788906247?music_info=0&amp;description=0&amp;rel=0" title="Video 02: Chi phí đăng ký bảo hộ nhãn hiệu" loading="lazy" allow="fullscreen; encrypted-media; picture-in-picture" allowfullscreen=""></iframe></div>
-<figcaption style="display:flex;flex-direction:column;gap:0.25rem"><span style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#7A5A12">Video 02</span><a href="https://www.tiktok.com/@luatsutriet/video/7501556846788906247" target="_blank" rel="noopener" style="font-size:0.9375rem;font-weight:700;line-height:1.35">Chi phí đăng ký bảo hộ nhãn hiệu</a></figcaption>
-</figure>
-<figure style="margin:0;display:flex;flex-direction:column;gap:0.625rem">
-<div class="vframe"><iframe src="https://www.tiktok.com/player/v1/7501395046378392839?music_info=0&amp;description=0&amp;rel=0" title="Video 03: Quy trình đăng ký bảo hộ nhãn hiệu" loading="lazy" allow="fullscreen; encrypted-media; picture-in-picture" allowfullscreen=""></iframe></div>
-<figcaption style="display:flex;flex-direction:column;gap:0.25rem"><span style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#7A5A12">Video 03</span><a href="https://www.tiktok.com/@luatsutriet/video/7501395046378392839" target="_blank" rel="noopener" style="font-size:0.9375rem;font-weight:700;line-height:1.35">Quy trình đăng ký bảo hộ nhãn hiệu</a></figcaption>
-</figure>
+<a class="vcover" href="https://www.tiktok.com/@luatsutriet/video/7501572654227492104" target="_blank" rel="noopener" aria-label="Xem video 01: Tại sao phải đăng ký bảo hộ nhãn hiệu? trên TikTok">
+            <svg class="vc-bg" aria-hidden="true" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"></path><path d="M12 8v4"></path><path d="M12 15.5h.01"></path></svg>
+            <span class="vc-top"><span class="vc-num">Video 01</span><span class="vc-tag">@luatsutriet</span></span>
+            <span class="vc-mid">
+              <span class="vc-icon"><svg class="" aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"></path><path d="M12 8v4"></path><path d="M12 15.5h.01"></path></svg></span>
+              <span class="vc-title"><span class="vc-br">「</span>Tại sao phải<br>đăng ký bảo hộ?<span class="vc-br">」</span></span>
+              <span class="vc-sub">Rủi ro khi thương hiệu, logo chưa được bảo hộ</span>
+            </span>
+            <span class="vc-btn"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>Xem trên TikTok</span>
+          </a>
+<a class="vcover" href="https://www.tiktok.com/@luatsutriet/video/7501556846788906247" target="_blank" rel="noopener" aria-label="Xem video 02: Chi phí đăng ký bảo hộ nhãn hiệu trên TikTok">
+            <svg class="vc-bg" aria-hidden="true" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M14.8 9.2c-.5-.9-1.6-1.4-2.8-1.4-1.6 0-2.8.8-2.8 2s1.1 1.7 2.8 2.1c1.7.4 2.8 1 2.8 2.2s-1.2 2-2.8 2c-1.3 0-2.4-.5-2.9-1.5"></path><path d="M12 6v1.8"></path><path d="M12 16.2V18"></path></svg>
+            <span class="vc-top"><span class="vc-num">Video 02</span><span class="vc-tag">@luatsutriet</span></span>
+            <span class="vc-mid">
+              <span class="vc-icon"><svg class="" aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M14.8 9.2c-.5-.9-1.6-1.4-2.8-1.4-1.6 0-2.8.8-2.8 2s1.1 1.7 2.8 2.1c1.7.4 2.8 1 2.8 2.2s-1.2 2-2.8 2c-1.3 0-2.4-.5-2.9-1.5"></path><path d="M12 6v1.8"></path><path d="M12 16.2V18"></path></svg></span>
+              <span class="vc-title"><span class="vc-br">「</span>Chi phí<br>đăng ký bảo hộ<span class="vc-br">」</span></span>
+              <span class="vc-sub">Đăng ký nhãn hiệu cần chuẩn bị bao nhiêu?</span>
+            </span>
+            <span class="vc-btn"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>Xem trên TikTok</span>
+          </a>
+<a class="vcover" href="https://www.tiktok.com/@luatsutriet/video/7501395046378392839" target="_blank" rel="noopener" aria-label="Xem video 03: Quy trình đăng ký bảo hộ nhãn hiệu trên TikTok">
+            <svg class="vc-bg" aria-hidden="true" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 9l1.5 1.5L11 8"></path><path d="M13 9.5h4"></path><path d="M7 14.5l1.5 1.5L11 13.5"></path><path d="M13 15h4"></path></svg>
+            <span class="vc-top"><span class="vc-num">Video 03</span><span class="vc-tag">@luatsutriet</span></span>
+            <span class="vc-mid">
+              <span class="vc-icon"><svg class="" aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 9l1.5 1.5L11 8"></path><path d="M13 9.5h4"></path><path d="M7 14.5l1.5 1.5L11 13.5"></path><path d="M13 15h4"></path></svg></span>
+              <span class="vc-title"><span class="vc-br">「</span>Quy trình<br>đăng ký bảo hộ<span class="vc-br">」</span></span>
+              <span class="vc-sub">Các bước từ nộp đơn đến khi có văn bằng</span>
+            </span>
+            <span class="vc-btn"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>Xem trên TikTok</span>
+          </a>
 </div>
 </div>
 </div>
